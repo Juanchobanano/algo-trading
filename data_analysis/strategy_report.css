@@ -1,0 +1,26 @@
+
+.subline{
+	border-bottom: 1px solid rgba(0,0,0, 0.5);
+}
+
+.center-image{
+	display: block;
+	margin: auto;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+th, td {
+  padding: 10px;
+}

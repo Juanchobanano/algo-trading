@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=".././strategy_report.css">
+
+</head>
+<body>
+	<div class="container">
+		
+		<!-- REPORT HEADER -->
+		<header>
+
+			<div class="row">
+	            <div class="col mt-5" style="border-bottom: 1px solid blue; border-top: 1px solid blue;">
+	                <h2 class="display-5 text-center my-4">{{ title }}</h2>
+	            </div>
+	        </div>
+	        <div class="row my-5">   
+	            <div class="col-8 m-auto">
+	                <div class="list-group">
+	                    <a href="#" class="list-group-item list-group-item-action active">Index</a>
+	                    <a href="#" class="list-group-item list-group-item-action">1. Portfolio Performance.</a>
+	                    <a href="#" class="list-group-item list-group-item-action">2. Returns analytics.</a>
+	                    <a href="#" class="list-group-item list-group-item-action">3. Positions & Transactions Overview.</a>
+	                    <a href="#" class="list-group-item list-group-item-action">4. Positions analytics.</a>
+	                    <a href="#" class="list-group-item list-group-item-action">5. Risk & Drawdown analytics.</a>
+	                    <a href="#" class="list-group-item list-group-item-action">6. Sector analytics.</a>
+	                    <a href="#" class="list-group-item list-group-item-action">7. Montecarlo Simulation.</a>  
+	                    <a href="#" class="list-group-item list-group-item-action">8. Markowitz Optimization.</a>  
+	                </div>
+	            </div>
+	        </div>  
+	        <div class="row mb-5">
+	           <div class="col-8 text-justify m-auto">   
+	                <p>Este reporte financiero fue generado automaticamente por la libreria de analisis estadistico ICapital.py. A continuacion It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	                
+	                <p><b>Desarrollador:</b> Juan Esteban Cepeda.</p>
+	                <p><b>Linkedin:</b> https://www.linkedin.com/in/juan-e-cepeda-gestion/ </p>
+	                <p><b>Correo:</b> juancepeda.gestion@gmail.com</p>
+	            </div>
+	        </div>
+		</header>
+
+		<!-- 1. PORTFOLIO PERFORMANCE. -->
+		<section>
+			<div class="row my-2">
+                <div class="col-12">
+
+                    <h4 class="py-4 subline my-2 bg-dark text-white pl-4">1. Portfolio Performance.</h4>
+
+                    <p class="my-3 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="col">
+            		<img src={{strategies_balance_img}} class="center-image">
+            		<img src={{balance_img}} class="center-image">
+            		<img src={{table_stats_img}} class="center-image mt-2" width="250px">
+		   			<img src={{perfomance_stats_quantiles_img}}
+	                    class="center-image">
+            	</div>
+            </div>
+		</section>
+
+		<!-- 2. RETURNS ANALYTICS. -->
+		<section>
+			<div class="row">
+				<div class="col">
+					 <h4 class="py-4 subline my-4 bg-dark text-white pl-4">2. Returns analytics.</h4>
+
+                    <p class="my-3 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+
+					<img src={{returns_correlation_matrix_img}} class="center-image">
+					<div class="matrix">
+						{{ returns_correlation }}
+					</div>		
+					<img src={{returns_img}} class="center-image">
+                    <img src={{cumulative_returns_img}} class="center-image">      
+                    <img src={{cumulative_returns_benchmark_img}} class="center-image">
+                    <img src={{cumulative_returns_log_scale_img}} class="center-image">
+                    <img src={{monthly_returns_img}} class="center-image">
+                    <img src={{distribution_monthly_returns_img}} class="center-image">
+                    <img src={{annual_returns_img}} class="center-image">      
+                    <img src={{return_quantiles_img}} class="center-image">
+				</div>
+			</div>
+		</section>
+
+		<!-- 3. POSITIONS & TRANSACTIONS OVERVIEW. -->
+		<section>
+			<div class="row">
+				<div class="col">
+					 <h4 class="py-4 subline my-4 bg-dark text-white pl-4">3. Transactions & Positions Overview.</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h5 class="bg-primary text-white p-2 pl-3">3.1 Transactions</h5>
+                    <p class="my-3 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				<div class="col-12">
+					<img src={{lots_traded_img}} class="center-image">
+                    <img src={{asset_price_img}} class="center-image">
+				</div>
+			</div>
+			<div class="row my-4">
+				<div class="col-12">
+					<h5 class="bg-primary text-white p-2 pl-3">3.2 Positions</h5>
+                    <p class="my-3 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+				<div class="col-12">
+					<img src={{positions_img}} class="center-image">
+                    <img src={{cash_img}} class="center-image">
+				</div>
+			</div>
+		</section>
+
+		<!-- 4. POSITIONS ANALYTICS. -->
+		<section>
+			<div class="row">
+				<div class="col">
+					<h4 class="py-4 subline my-4 bg-dark text-white pl-4">4. Positions analytics.</h4>
+                  	<p class="my-3 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="col">
+					<img src={{daily_turnover_img}} class="center-image">
+                    <img src={{daily_trading_volume_img}} class="center-image">
+                    <img src={{distribution_daily_turnover_rates_img}} class="center-image">
+                    <img src={{txn_time_hist_img}} class="center-image">
+				</div>
+			</div>
+		</section>
+
+		<!-- 5. RISK & DRAWDOWN ANALYTICS -->
+		<section>
+			<div class="row">
+				<div class="col">
+					<h4 class="py-4 subline my-2 mt-3 bg-dark text-white pl-4">5. Risk & Drawdown analytics.</h4>
+                    <p class="my-3 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<img src={{porfolio_beta_to_close_img}} class="center-image">
+                    <img src={{rolling_volatility_img}} class="center-image">
+                    <img src={{table_drawdowns_img}} class="center-image" height="200px" style="margin-top: 20px; margin-bottom: 20px;">
+                    <img src={{top_5_drawdowns_img}} class="center-image">
+                    <img src={{underwater_plot_img}} class="center-image">
+				</div>
+			</div>
+		</section>
+
+		<!-- 6. SECTOR ANALYTICS. -->
+		<section>
+			<div class="row">
+				<div class="col">
+					<h4 class="py-4 subline my-2 mt-3 bg-dark text-white pl-4">6. Sector Analytics.</h4>
+                    <p class="my-3 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<img src={{exposures_img}} class="center-image">
+					<img src={{show_and_plot_top_positions_1_img}} class="center-image">
+					<img src={{show_and_plot_top_positions_2_img}} class="center-image">
+					<img src={{long_short_max_and_median_position_contration_img}} class="center-image">
+					<img src={{total_holdings_img}} class="center-image">
+					<img src={{long_and_short_holdings_img}} class="center-image">
+
+					<img src={{gross_leverage_img}} class="center-image">
+					<img src={{sector_allocation_over_time_img}} class="center-image">
+				</div>
+			</div>
+		</section>
+
+		<!-- 7. MONTECARLO SIMULATION. -->
+		<section>
+			<div class="row">
+				<div class="col">
+					<h4 class="py-4 subline my-2 mt-3 bg-dark text-white pl-4">7. Montecarlo Simulation.</h4>
+                    <p class="mt-3 mb-2 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<img src={{montecarlo_img}}>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<table class="table mt-2 mb-5">
+                        <tr class="table-primary">
+                            <th scope="col">Statistic</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                        <tr>
+                            <th>Positive Outcomes (%)</th>
+                            <td>{{ positive_outcomes_abs }} ({{ positive_outcomes_rel}}%)</td>
+                        </tr>
+                        <tr>
+                            <th>Negatives Outcomes (%)</th>
+                            <td>{{ negative_outcomes_abs }} ({{negative_outcomes_rel}}%)</td>
+                        </tr>
+                        <tr>
+                            <th>Montecarlo Simulated Days</th>
+                            <td>{{ montecarlo_days_simulated }}</td>
+                        </tr>
+                        <tr>
+                            <th>Montecarlo Initial Balance</th>
+                            <td>{{ montecarlo_initial_balance }}</td>
+                        </tr>
+                        <tr>
+                            <th>Montecarlo Mean Final Balance</th>
+                            <td>{{ montecarlo_mean_balance }}</td>
+                        </tr>
+                        <tr>
+                            <th>Montecarlo Mean Net Profit</th>
+                            <td>{{ montecarlo_mean_netprofit }}</td>
+                        </tr>
+                        <tr>
+                            <th>Montecarlo Profiability</th>
+                            <td>{{ montecarlo_profiability }}%</td>
+                        </tr>
+                    </table>
+				</div>
+			</div>
+		</section>
+
+		<!-- 8. MARKOWITZ OPTIMIZATION. -->
+		<section>
+			<div class="row">
+				<div class="col">
+					<h4 class="py-4 subline my-2 mt-3 bg-dark text-white pl-4">8. Markowitz Optimization.</h4>
+                    <p class="mt-3 mb-2 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<img src={{efficient_frontier_img}} style="position: relative; left: 180px">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<table class="table mt-4">
+                        <tr class="table-primary">
+                            <th scope="col">Statistic</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                        <tr>
+                            <th>Optimal Sharpe Ratio</th>
+                            <td>{{ optimal_sharpe_ratio }}</td>
+                        </tr>
+                        <tr>
+                            <th>Current Investment Fund Value</th>
+                            <td>{{ montecarlo_initial_balance }}</td>
+                        </tr>
+                    </table>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col">
+					<table class="table">
+                    	<tr class="table-primary">
+                            <th scope="col">Expert</th>
+                            <th scope="col">Optimal Allocation</th>
+                        </tr>
+                    	<tr>
+                            <th>{{ robot_names[0] }}</th>
+                            <td>{{ allocation_results[0] * montecarlo_initial_balance}} ({{allocation_results[0] * 100}}%)</td>
+                        </tr>
+                        <tr>
+                            <th>{{ robot_names[1] }}</th>
+                            <td>{{ allocation_results[1] * montecarlo_initial_balance}} ({{allocation_results[1] * 100}}%)</td>
+                        </tr>
+                        <tr>
+	                        <th>{{ robot_names[2] }}</th>
+	                        <td>{{ allocation_results[2] * montecarlo_initial_balance}} ({{allocation_results[2] * 100}}%)</td>
+                        </tr>
+                    </table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<table class="table">
+						<tr class="table-primary">
+                            <th scope="col">Expert</th>
+                            <th scope="col">Investment in dlls</th>
+                            <th scope="col">Risk per Trade (2%)</th>
+                            <th scope="col">Lot Size per Trade</th>
+                        </tr>
+                        <tr>
+                        	<th>{{ robot_names[0] }}</th>
+                        	<td>{{ allocation_results[0] * montecarlo_initial_balance}}</td>
+                        	<td>{{ allocation_results[0] * montecarlo_initial_balance * 0.02}}</td>
+                        	<td>{{ allocation_results[0] * montecarlo_initial_balance * 0.02 / (stop_loss_pips[0] * 10)}}</td>
+                        </tr>
+                        <tr>
+                        	<th>{{ robot_names[1] }}</th>
+                        	<td>{{ allocation_results[1] * montecarlo_initial_balance}}</td>
+                        	<td>{{ allocation_results[1] * montecarlo_initial_balance * 0.02}}</td>
+                        	<td>{{ allocation_results[1] * montecarlo_initial_balance * 0.02 / (stop_loss_pips[1] * 10)}}</td>
+                        </tr>
+                        <tr>
+                        	<th>{{ robot_names[2] }}</th>
+                        	<td>{{ allocation_results[2] * montecarlo_initial_balance}}</td>
+                        	<td>{{ allocation_results[2] * montecarlo_initial_balance * 0.02}}</td>
+                        	<td>{{ allocation_results[2] * montecarlo_initial_balance * 0.02 / (stop_loss_pips[2] * 10)}}</td>
+                        </tr>
+					</table>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+    <footer class="footer mt-5 p-3 bg-dark text-white text-center">
+    	<p class="mt-3">Report generated by ICapital.py</p>
+    </footer>
+</body>
+</html>

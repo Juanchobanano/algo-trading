@@ -1,0 +1,25 @@
+/*table{
+	width: 100%;
+}
+
+th{
+	text-align: left;
+}
+
+th, td{
+	padding: 15px;
+	text-align: left;
+}
+
+table, td, th{
+	border: 1px solid #ddd;
+}*/
+
+.subline{
+	border-bottom: 1px solid rgba(0,0,0, 0.5);
+}
+
+.center-image{
+	display: block;
+	margin: auto;
+}
