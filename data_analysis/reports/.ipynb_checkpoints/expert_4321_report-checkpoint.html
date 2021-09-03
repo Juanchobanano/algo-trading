@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Strategy Report Expert_4321</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./strategy_report.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col mt-5" style="border-bottom: 1px solid blue;">
+                    <h2 class="display-5 text-center mb-4">Strategy Report Expert_4321</h2>
+                </div>
+            </div>
+        </header>   
+        <!--  
+        <section>
+           <div class="row">
+               <div class="col">
+                   <h4 class="my-4">Indice</h4>
+                    <div class="list-group">
+                        <a href="#stats" class="list-group-item list-group-item-action shadow-sm">1. Estadisticas de la estrategia.</a>
+                        <a href="#" class="list-group-item list-group-item-action shadow-sm">2. Analisis con Pyfolio.</a>
+                        <a href="#" class="list-group-item list-group-item-action shadow-sm">3. Graficas con Pyfolio.</a>
+                    </div>
+               </div>
+           </div>
+        </section>
+        -->
+
+        <section class="mt-2" id="stats">
+            <div class="row my-2">
+                <div class="col-12">
+                    <h4 class="py-4 subline mb-2">Strategy Stats</h4>
+                    <img src=.././figures/balance.png>
+                </div>
+
+                <div class="col-12">
+                    <table class="table mt-2 mb-5">
+                        <tr class="table-primary">
+                            <th scope="col">Statistic</th>
+                            <th scope="col">Value</th>
+
+                            <th scope="col">Statistic</th>
+                            <th scope="col">Value</th>
+                        </tr>
+
+
+                        <tr>
+                            <th>History Quality</th>
+                            <td>100%</td>
+                            <th></th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Initial Deposit</th>
+                            <td>5000.0</td>
+                            <th>Expected Payoff</th>
+                            <td>1.3099</td>
+                        </tr>
+
+                        <tr>
+                            <th>Total Net Profit</th>
+                            <td>90.38</td>
+                            <th>Total Commission</th>
+                            <td>0.0</td>
+                        </tr>
+
+                        <tr>
+                            <th>Gross Profit</th>
+                            <td>101.91000000000001</td>
+                            <th>Total Swap</th>
+                            <td>-3.4899999999999998</td>
+                        </tr>
+
+                        <tr>
+                            <th>Gross Loss</th>
+                            <td>8.04</td>
+                            <th></th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Profitability</th>
+                            <td>2.0%</td>
+                            <th></th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td></td>
+                            <th></th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Profit Factor</th>
+                            <td>12.68</td>
+                            <th>APHR</th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Recovery Factor</th>
+                            <td></td>
+                            <th>GHRP</th>
+                            <td></td>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+
+                <div class="col-12">
+                    <table class="table mt-2 mb-5">
+                        <tr class="table-primary">
+                            <th scope="col">Statistic</th>
+                            <th scope="col">Value</th>
+
+                            <th scope="col">Statistic</th>
+                            <th scope="col">Value</th>
+
+                            <th scope="col">Statistic</th>
+                            <th scope="col">Value</th>
+                        </tr>
+
+                        <tr>
+                            <th>Total Trades</th>
+                            <td>69.0</td>
+                            <th>Short Trades (won %)</th>
+                            <td></td>
+                            <th>Long Trades (won %)</th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Total Deals</th>
+                            <td>138</td>
+                            <th>Profit Trades (% of total)</th>
+                            <td></td>
+                            <th>Loss Trades (% of total)</th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Largest</th>
+                            <td></td>
+                            <th>Profit Trade</th>
+                            <td></td>
+                            <th>Loss Trade</th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Average</th>
+                            <td></td>
+                            <th>Profit Trade</th>
+                            <td></td>
+                            <th>Loss Trade</th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Maximum</th>
+                            <td></td>
+                            <th>Consecutive wins ($)</th>
+                            <td></td>
+                            <th>Consecutive Losses ($)</th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Maximal</th>
+                            <td></td>
+                            <th>Consecutive profit (count)</th>
+                            <td></td>
+                            <th>Consecutive Loss (count)</th>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <th>Average</th>
+                            <td></td>
+                            <th>Consecutive wins</th>
+                            <td></td>
+                            <th>Consecutive Losses</th>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                <div class="col-12">
+                    <img src=.././figures/table_stats.png class="center-image mt-2" width="250px">
+                </div>
+
+                <div class="col-12 mt-4">
+                    <img src=.././figures/perfomance_stats_quantiles.png
+                    class="center-image" height="350px">
+                </div>
+
+
+                <div class="col-12">
+                    <h4 class="py-4 subline mb-2">Strategy Returns.</h4>
+                    <div class="row my-2">
+              
+                            <img src=.././figures/returns.png class="center-image">
+                            <img src=.././figures/cumulative_returns.png class="center-image">
+                        
+               
+                            <img src=.././figures/cumulative_returns_benchmark.png class="center-image">
+                            <img src=.././figures/cumulative_returns_log_scale.png class="center-image">
+                 
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <h4 class="py-4 subline mb-2">Strategy Entries Analysis.</h4>
+                    <table class="table mt-4 mb-5">
+                        <tr class="table-primary">
+                            <th scope="col">Statistic</th>
+                            <th scope="col">Value</th>
+                        </tr>
+                        <tr>
+                            <th>Holding Max Period</th>
+                            <td>117 days 22:04:40</td>
+                        </tr>
+                        <tr>
+                            <th>Holding Min Period</th>
+                            <td>0 days 00:30:20</td>
+                        </tr>
+                        <tr>
+                            <th>Holding Average Period</th>
+                            <td>5 days 04:33:26.362318</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="col">
+                    <div class="row my-2">
+                    
+                            <img src=.././figures/entries_week_days.png class="center-image">
+                            <img src=.././figures/entries_month.png class="center-image">
+             
+                            <img src=.././figures/entries_year.png class="center-image">
+                
+                    </div>
+                </div>
+
+               
+
+                <div class="col">
+                    <h4 class="py-4 subline mb-2">Strategy Transactions.</h4>
+                
+                    <img src=.././figures/lots_traded.png class="center-image">
+                    <img src=.././figures/asset_price.png class="center-image">
+            
+                 
+                </div>
+                <div class="col">
+                    <h4 class="py-4 subline mb-2">Strategy Positions.</h4>
+                    <img src=.././figures/positions.png class="center-image">
+                    <img src=.././figures/cash.png class="center-image">
+            
+                </div>
+                
+                <div class="col">
+                    <h4 class="py-4 subline mb-5">Asset Beta to Close.</h4>
+                    <img src=.././figures/porfolio_beta_to_close.png class="center-image">
+                </div>
+                <div class="col">
+                    <h4 class="py-4 subline mb-5">Asset Rolling Volatility.</h4>
+                    <img src=.././figures/rolling_volatility.png class="center-image">
+                </div>
+                <div class="col">
+                    <h4 class="py-4 subline mb-5">Strategy Drawdowns.</h4>
+                    <img src=.././figures/table_drawdowns.png class="center-image" height="200px">
+  
+         
+                    <img src=.././figures/top_5_drawdowns.png class="center-image">
+   
+                    <img src=.././figures/underwater_plot.png class="center-image">
+         
+                </div>
+                <div class="col">
+                    <h4 class="py-4 subline mb-2">Montecarlo simulation.</h4>
+                    <img src=.././figures/montecarlo.png>
+                </div>
+            </div>
+
+          
+ 
+
+        </section>
+    </div>
+
+</body>
+</html>
